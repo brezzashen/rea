@@ -1,5 +1,38 @@
 # Changelog
 
+## [6.4.0](https://github.com/morluto/rea/compare/rea-agents-6.3.0...rea-agents-6.4.0) (2026-10-10)
+
+
+### ⚠ BREAKING CHANGES
+
+* **javascript:** New analyses use compact endpoint labels and digest-based IDs for long or reserved-prefix endpoint keys. Select IDs from the parent graph and read full values from endpoint properties. Previously stored graphs retain their original identities and remain valid workflow inputs.
+* **javascript:** Newly produced semantic literal node IDs use value-sha256 role keys, and string labels read "string literal". Read exact values from properties.value and obtain node IDs from the selected parent graph. Previously stored Evidence and its original IDs remain valid.
+
+### Bug Fixes
+
+* **browser:** classify selected web trace file failures by cause ([#1396](https://github.com/morluto/rea/issues/1396)) ([2b6e9ec](https://github.com/morluto/rea/commit/2b6e9ec03f88abb0799a4d154e48544ff4685a41))
+* **cli:** accept JSON files for web capture and screenshot comparisons ([#1397](https://github.com/morluto/rea/issues/1397)) ([6875d4a](https://github.com/morluto/rea/commit/6875d4a64c0d77c4f90ebbec36705f191eb7cdc6))
+* **cli:** stop advertising multi-letter single-dash option aliases ([#1395](https://github.com/morluto/rea/issues/1395)) ([498cec0](https://github.com/morluto/rea/commit/498cec042a5f05557ae9c2ef9663d41dd03901c3))
+* **javascript:** avoid endpoint payload copies in graph metadata ([#1423](https://github.com/morluto/rea/issues/1423)) ([98022a8](https://github.com/morluto/rea/commit/98022a835275375ee0ffa88b7c8983ba6f080040))
+* **javascript:** bound member-mutation paths through reassignment loops ([2859527](https://github.com/morluto/rea/commit/28595276faac6a01dd4930313a91fab717d29513))
+* **javascript:** handle oversized inline source maps ([#1386](https://github.com/morluto/rea/issues/1386)) ([5fc4d79](https://github.com/morluto/rea/commit/5fc4d792caeb3cd81c2021e45a158c5127906c56))
+* **javascript:** retain shorter literal metadata encodings ([#1408](https://github.com/morluto/rea/issues/1408)) ([de8fc67](https://github.com/morluto/rea/commit/de8fc6719596305b1d76204e6b052cf46d7e7fc3))
+* **javascript:** stop copying literals into semantic metadata ([#1407](https://github.com/morluto/rea/issues/1407)) ([8550913](https://github.com/morluto/rea/commit/8550913cda311e5340cf012b9c4afd622e36e35b))
+
+
+### Performance Improvements
+
+* **cli:** write compact JSON when output is not a terminal ([#1413](https://github.com/morluto/rea/issues/1413)) ([ca3131b](https://github.com/morluto/rea/commit/ca3131b36ccf025f64b9e43ecae2698d37747de7))
+* **evidence:** stop copying normalized results into raw_result ([#1402](https://github.com/morluto/rea/issues/1402)) ([499e2f5](https://github.com/morluto/rea/commit/499e2f54efc65aff427978613284c3e429398d44))
+* **hopper:** stop repeating Hopper replies as raw_result ([#1405](https://github.com/morluto/rea/issues/1405)) ([1f0f728](https://github.com/morluto/rea/commit/1f0f728c63a4d9f32fc183c6a41627eedb8d1fe2))
+* **javascript:** aggregate semantic family coverage once ([#1410](https://github.com/morluto/rea/issues/1410)) ([4d8ef3f](https://github.com/morluto/rea/commit/4d8ef3f35022f286e5a6b2ee250cfb336e14a4ad))
+* **native:** record pwntools diagnostics once in their Evidence ([#1404](https://github.com/morluto/rea/issues/1404)) ([7623e21](https://github.com/morluto/rea/commit/7623e21ff02cf4eb00ccb4fa357936e4ed01425e))
+
+
+### Documentation
+
+* celebrate 50,000 GitHub stars 🎉 ([81cdafc](https://github.com/morluto/rea/commit/81cdafc132c7ba3bd6e12b1169f9e3687025d07b))
+
 ## [6.3.0](https://github.com/morluto/rea/compare/rea-agents-6.2.0...rea-agents-6.3.0) (2026-10-09)
 
 
