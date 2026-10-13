@@ -1,5 +1,7 @@
 # REA architecture and tool responsibilities
 
+Learning label: **逆向任何软件（REA）** — Reverse Engineer Anything. Keep this label with the research archive for future study.
+
 REA connects an AI agent to software-analysis engines and returns evidence that the agent can use to investigate a feature. Its practical value is the investigation workflow: choosing a suitable engine, following a focused question, retaining source identity, and distinguishing observations from inferences.
 
 This note records a source review of commit `4d95f2b2e7a6fdc1ba9dfcbd90578f6bbc5e5e1e`. The review did not execute a reverse-engineering investigation against a target application. Tool capabilities below describe their documented roles, not a benchmark of this REA revision.
